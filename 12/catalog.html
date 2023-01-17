@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/index.js"></script>
+  <base href="https://htmlacademy-adaptive.github.io/414261-sedona-27/12/">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a>
+      <picture>
+        <img class="page-header__logo" src="./img/logo.svg" width="185" height="96" alt="Лого седоны" />
+      </picture>
+    </a>
+
+    <nav class="site-nav site-nav--opened site-nav--no-js">
+      <button class="site-nav__toggle-menu" type="button" aria-label="Кнопка отображения меню">
+        <span class="visually-hidden">Меню</span>
+      </button>
+
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="index.html">
+            <span>Главная</span>
+          </a>
+        </li>
+        <li class="site-nav__item site-nav__item--current-page">
+          <a class="site-nav__link">
+            <span>Фото и видео</span>
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="form.html">
+            <span>Форма отзыва</span>
+          </a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>HTMl Academy</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main">
+
+    <div class="hero">
+      <img class="hero__title" src="./img/hero-title.svg" width="229" height="39" alt="Надпись — Седона" />
+    </div>
+
+    <section class="gallery">
+      <h1 class="visually-hidden">Галерея с фото и видео</h1>
+
+      <section class="gallery__intro intro intro--photos">
+        <h2 class="intro__title intro__title--font-bigger">Фото и видео</h2>
+        <p class="intro__message">
+          Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии&nbsp;помогут
+          вам забыть о&nbsp;политике и&nbsp;экономике.
+        </p>
+      </section>
+
+      <section class="gallery__photos">
+        <h1 class="visually-hidden">Фотографии</h1>
+
+        <ul class="photos">
+          <li class="photos__item">
+            <picture>
+              <source media="(min-width: 769px)" srcset="./img/photo-1-1200.jpg, ./img/photo-1-1200-2x.jpg 2x">
+              <source media="(min-width: 321px)" srcset="./img/photo-1-648.jpg, ./img/photo-1-648-2x.jpg 2x">
+              <img class="photos__image photos__image--main" src="./img/photo-1-280.jpg" width="280" height="280" srcset="./img/photo-1-280-2x.jpg 2x" alt="Неродные просторы" />
+            </picture>
+
+            <div class="photos__info">
+              <h2 class="photos__title">Неродные просторы</h2>
+              <p class="photos__author">Автор фото: Борис</p>
+              <button class="photos__like like" type="button" aria-label="Кнопка лайк">
+                <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="like__total-likes">1350</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="photos__item">
+            <img class="photos__image" src="./img/photo-2-400.jpg" width="280" height="280" srcset="./img/photo-2-400-2x.jpg 2x" alt="Местная растительность" />
+
+            <div class="photos__info">
+              <h2 class="photos__title">Местная растительность</h2>
+              <p class="photos__author">Автор фото: Сергей</p>
+              <button class="photos__like like" type="button" aria-label="Кнопка лайк">
+                <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="like__total-likes">143</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="photos__item">
+            <img class="photos__image" src="./img/photo-3-400.jpg" width="280" height="280" srcset="./img/photo-3-400-2x.jpg 2x" alt="Дорога на север" />
+
+            <div class="photos__info">
+              <h2 class="photos__title">Дорога на север</h2>
+              <p class="photos__author">Автор фото: Пётр</p>
+              <button class="photos__like like" type="button" aria-label="Кнопка лайк">
+                <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="like__total-likes">96</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="photos__item">
+            <img class="photos__image" src="./img/photo-4-400.jpg" width="280" height="280" srcset="./img/photo-4-400-2x.jpg 2x" alt="Мост дьявола" />
+
+            <div class="photos__info">
+              <h2 class="photos__title">Мост Дьявола</h2>
+              <p class="photos__author">Автор фото: Антон</p>
+              <button class="photos__like like" type="button" aria-label="Кнопка лайк">
+                <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="like__total-likes">154</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="gallery__video video">
+        <h1 class="visually-hidden">Видео</h1>
+
+        <section class="intro intro--video">
+          <h2 class="intro__title">Все еще сомневаетесь?</h2>
+          <p class="intro__message">
+            Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не&nbsp;подорожали в&nbsp;очередной раз!
+          </p>
+        </section>
+
+        <section class="video__player-wrapper">
+          <div class="player">
+            <button class="player__button" type="button" aria-label="Кнопка воспроизведения">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+
+            <div class="player__container">
+              <video poster="./img/video-poster.jpg">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- todo: (ОТСУПЫ) сетка футера на стр. каталога и формы отличается от главной -->
+
+  <footer class="page__footer footer">
+    <h2 class="visually-hidden">Социальный сети</h2>
+
+    <p class="footer__hashtag">#visitsedona</p>
+
+    <ul class="footer__socials socials">
+      <li>
+        <a class="socials__link" href="#" aria-label="Перейти в VK">
+          <span class="visually-hidden">ВКонтакте</span>
+          <svg width="24" height="14" aria-hidden="true">
+            <use href="./img/sprite.svg#vk" fill="currentColor" />
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a class="socials__link" href="#" aria-label="Перейти в Telegram">
+          <span class="visually-hidden">Telegram</span>
+          <svg width="24" height="14" aria-hidden="true">
+            <use href="./img/sprite.svg#tg" fill="currentColor" />
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a class="socials__link" href="#" aria-label="Перейти в YouTube">
+          <span class="visually-hidden">YouTube</span>
+          <svg width="24" height="14" aria-hidden="true">
+            <use href="./img/sprite.svg#yt" fill="currentColor" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer__created">
+      <a class="created" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTMl Academy">
+        <span class="created__text">Разработано</span>
+
+        <svg width="27" height="35" aria-hidden="true">
+          <use href="./img/sprite.svg#ha-logo" fill="currentColor" />
+        </svg>
+        <span class="visually-hidden">Перейти на страницу курса Адаптивная вёрстка и автоматизация</span>
+      </a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
